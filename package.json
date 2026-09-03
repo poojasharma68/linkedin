@@ -1,0 +1,24 @@
+{
+  "name": "linkedin-posts",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:push": "node --env-file=.env.local scripts/db-push.mjs",
+    "storage:init": "node --env-file=.env.local scripts/storage-init.mjs",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"test/**/*.test.mjs\"",
+    "preflight": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file-if-exists=.env.local scripts/capture-preflight.mjs"
+  },
+  "dependencies": {
+    "@masters-union/union-stack": "^1.1.0",
+    "@supabase/supabase-js": "^2.58.0",
+    "next": "^16.3.4",
+    "puppeteer": "^25.9.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "pg": "^8.23.0"
+  }
+}
