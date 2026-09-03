@@ -8,7 +8,8 @@
     "db:push": "node --env-file=.env.local scripts/db-push.mjs",
     "storage:init": "node --env-file=.env.local scripts/storage-init.mjs",
     "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"test/**/*.test.mjs\"",
-    "preflight": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file-if-exists=.env.local scripts/capture-preflight.mjs"
+    "preflight": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file-if-exists=.env.local scripts/capture-preflight.mjs",
+    "capture:debug": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file-if-exists=.env.local scripts/capture-debug.mjs"
   },
   "dependencies": {
     "@masters-union/union-stack": "^1.1.0",
